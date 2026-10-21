@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# --- Django ---
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+/staticfiles/
+/media/
+
+# --- Secrets et configuration locale ---
+.env
+.env.*
+!.env.example
+
+# --- Données personnelles et fichiers téléchargés ---
+*.xlsx
+!exemple*.xlsx
+~$*
+data/cardmarket/
+backups/
+
+# --- Outils ---
+.vscode/
+.idea/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
