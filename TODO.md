@@ -1,3 +1,5 @@
+Pour adtiver le pyenv : source .venv/Scripts/activate
+
 Base de données. Écris les modèles ci-dessus, refais les migrations et teste les contraintes.
 Terminé quand : les 6 règles d’unicité sont vérifiées dans le shell Django ou en tests.
 Contrat du fichier. Liste les feuilles, les colonnes obligatoires et facultatives, et les colonnes ajoutées par le programme (ID achat, ID Cardmarket, Statut).
