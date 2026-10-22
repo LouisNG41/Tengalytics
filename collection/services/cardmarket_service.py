@@ -1,5 +1,7 @@
 import requests
 from django.utils import timezone
+import json
+from pathlib import Path
 
 def download_cardmarket_pokemon_product_cards():
     response = requests.get("https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_6.json", timeout=60)
@@ -29,11 +31,6 @@ def clear_products_data_from_cardmarket():
 
     for product in pokemon_products["products"]:    
         data_clear[product["name"]] = {}
-
-
-import json
-from pathlib import Path
-
 
 def charger_catalogue_cardmarket():
 

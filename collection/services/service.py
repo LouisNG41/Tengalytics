@@ -35,7 +35,7 @@ def get_or_create_product(produit, catalogue_produit_cm):
                                              tcg = produit["TCG"],
                                              cardmarket_id= catalogue_produit_cm["idCardmarket"],
                                              category = catalogue_produit_cm['Infos']['categoryName'],
-                                             expansion = produit['Serie'])
+                                             serie = produit['Serie'])
 
         logger.info("Produit créé : %s", nom)
         return produit, True
@@ -49,7 +49,6 @@ def get_or_create_product(produit, catalogue_produit_cm):
             return produit, False
 
         raise
-
 
 def register_price(product: Product, price_data: dict) -> PriceSnapshot:
     """Ajoute le relevé du jour à l'historique du produit."""
